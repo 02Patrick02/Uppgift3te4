@@ -1,0 +1,33 @@
+body{
+    background:#0cd7ed;
+	background: linear-gradient(#0cd7ed, #0c31ed);
+	background-repeat:no-repeat;
+	height:95vh;
+	width:100vw;
+}
+
+header {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+}
+
+nav{
+	color: red;
+	font-size:2em;
+	font-family:cursive;
+    border-bottom: 1px solid black;
+}
+h1{
+    padding-left: 45vw;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 1em;
+    width: 100%;
+    color: black;
+    text-align: center;
+ }
