@@ -10,18 +10,20 @@ header {
     display: flex;
     height: 5vh;
     align-items: center;
+    font-size: 2.5em;
+    border-bottom: 2px solid black;
+    color:black;
 }
 
 nav{
-	color: red;
 	font-size:2em;
-	font-family:cursive;
-    border-bottom: 1px solid black;
-}
-h1{
-    padding-left: 45vw;
+	font-family: Arial;
+    border-bottom: 2px solid black;
 }
 
+h1{
+    padding-left: 40vw;
+}
 
 footer {
     position: fixed;
