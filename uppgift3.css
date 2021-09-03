@@ -6,30 +6,21 @@ body{
 	width:100vw;
 }
 
-header {
-    display: flex;
-    height: 5vh;
-    align-items: center;
-    font-size: 2.5em;
-    border-bottom: 2px solid black;
-    color:black;
-}
-
 nav{
 	font-size:2em;
 	font-family: Arial;
-    border-bottom: 2px solid black;
 }
 
-h1{
-    padding-left: 40vw;
+a {
+    display: block;
+    padding: 5px;
+    background-color: lightblue;
 }
 
 footer {
-    position: fixed;
-    left: 0;
+    position:fixed;
     bottom: 1em;
     width: 100%;
     color: black;
     text-align: center;
- }
+}
