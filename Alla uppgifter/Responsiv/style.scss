@@ -1,0 +1,210 @@
+body{
+    background-color: lightgreen;
+}
+
+.wrapper{
+    background-color:aqua;
+    width:95vw;
+    height: 97vh;
+    margin:auto;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto  auto auto auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: aquamarine;
+    h1{
+        font-size: 2em;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+nav{
+    grid-area: nav;
+    ul{
+        padding:0;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        li{
+            text-align: center;
+            list-style-type: none;
+            padding: 1px;
+            a{
+                background-color: lightgray;
+                display: inline-block;
+                border-style: groove;
+                list-style-type: none;
+                text-decoration: none;
+                min-width:90vw ;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+a:hover{
+    background-color: black;
+    color: red;
+}
+
+main{
+    grid-area:main;
+    text-align: center;
+    img{
+        width:70%;
+    }
+}
+aside{
+    text-align: center;
+    margin-right: 10px;
+}
+
+footer{
+    grid-area:footer;
+    background-color: aquamarine;
+    p{
+        font-size:small ;
+        text-align: center;
+    }
+}
+
+#sida2{
+    .wrapper{
+        height: 180vh;
+    }
+    
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "figure figcaption"
+        "article article";
+        text-align: center;
+        figcaption{
+            grid-area: figcaption;
+            margin-top: 50px;
+        }
+        article{
+            grid-area:article;
+        }
+        img{
+            width:100%;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 10% auto 5%;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    }
+    nav{
+        grid-area: nav;
+        max-height: 8.5vh;
+        ul{
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            li{
+                text-align: center;
+                list-style-type: none;
+                a{
+                    display: inline-block;
+                    border-style: groove;
+                    list-style-type: none;
+                    text-decoration: none;
+                    padding:1.5vh;
+                    min-width:21.4vw ;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    
+    #sida2{
+        .wrapper{
+            height:97vh;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+        }
+        nav{
+            grid-area: nav;
+            max-height: 7.5vh;
+            ul{
+                grid-template-rows: 1fr;
+                grid-template-columns: auto;
+                li{
+                    text-align: center;
+                    list-style-type: none;
+                    padding:1vh;
+                    a{
+                        display: inline-block;
+                        border-style: groove;
+                        list-style-type: none;
+                        text-decoration: none;
+                        padding:1.5vh;
+                        min-width: 30vw;
+                    }
+                }
+            }
+        }
+
+        section{
+            border-style: groove;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "figure article"
+            "figcaption article";
+            text-align: center;
+            figcaption{
+                grid-area: figcaption;
+                margin-top: 0px;
+            }
+            article{
+                margin-right:50px;
+                align-self: center;
+            }
+            img{
+                width:35%;
+            }
+        }
+    }
+    #sida3{
+        .wrapper{
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows:  5% auto 5%;
+            grid-template-areas: 
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+        }
+        nav{
+            ul{
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: auto;
+                li{
+                    padding:1vh;
+                }
+            }
+        }
+    }
+}
